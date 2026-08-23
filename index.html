@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eu Apoio Euclydes 1015</title>
+    <meta name="description" content="Crie sua foto personalizada de apoio a Euclydes Pettersen 1015." />
+    <meta property="og:title" content="Eu Apoio Euclydes 1015" />
+    <meta property="og:description" content="Coloque a moldura da campanha na sua foto em poucos segundos." />
+    <meta property="og:image" content="assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="page-shell">
+        <header class="brand-bar">
+          <a class="brand" href="#inicio" aria-label="Euclydes 1015 — início">
+            <span class="brand-mark">1015</span>
+            <span class="brand-label">Foto de apoio</span>
+          </a>
+          <span class="privacy-pill"><span></span>Sua foto não é enviada</span>
+        </header>
+
+        <section id="inicio" class="intro">
+          <span class="eyebrow">EU APOIO EUCLYDES</span>
+          <div class="hero-number" aria-label="Número 1015">1015</div>
+          <h1>Coloque sua foto<br />nessa <em>campanha.</em></h1>
+          <p>Escolha sua melhor foto, ajuste como quiser e baixe pronta para usar nas redes sociais.</p>
+        </section>
+
+        <section class="editor-card" aria-label="Editor de foto de apoio">
+          <div class="preview-column">
+            <div class="canvas-wrap" id="canvasWrap">
+              <canvas id="photoCanvas" width="1080" height="1080" aria-label="Prévia da foto com a moldura oficial"></canvas>
+              <button class="empty-preview" id="emptyPreview" type="button">
+                <span class="empty-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4" width="17" height="16" rx="2.5" stroke="currentColor" stroke-width="1.7"/><circle cx="9" cy="9" r="1.6" fill="currentColor"/><path d="m5.5 17 4.2-4.2a1.5 1.5 0 0 1 2.1 0l1.5 1.5 1.3-1.3a1.5 1.5 0 0 1 2.1 0l1.8 1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <strong>Sua foto aparecerá aqui</strong>
+                <small>Toque para escolher uma imagem</small>
+              </button>
+            </div>
+            <p class="drag-help" id="dragHelp" hidden>Arraste a foto para reposicionar</p>
+          </div>
+
+          <div class="controls-column">
+            <div>
+              <span class="step">PASSO 1</span>
+              <h2>Escolha sua foto</h2>
+              <p>Use uma foto clara, de preferência com o rosto centralizado.</p>
+            </div>
+
+            <input class="sr-only" id="fileInput" type="file" accept="image/jpeg,image/png,image/webp" />
+            <button class="upload-button" id="uploadButton" type="button">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 15.5v2.75A1.75 1.75 0 0 0 6.75 20h10.5A1.75 1.75 0 0 0 19 18.25V15.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span id="uploadText">Selecionar foto</span>
+            </button>
+
+            <div class="adjustments disabled" id="adjustments">
+              <div class="adjustment-title">
+                <span class="step">PASSO 2</span>
+                <button id="resetButton" type="button" disabled>Restaurar</button>
+              </div>
+              <label for="zoomRange">Ajuste o zoom <output id="zoomOutput">100%</output></label>
+              <div class="range-row">
+                <span aria-hidden="true">−</span>
+                <input id="zoomRange" type="range" min="1" max="3" step="0.01" value="1" disabled />
+                <span aria-hidden="true">＋</span>
+              </div>
+            </div>
+
+            <button class="download-button" id="downloadButton" type="button" disabled>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Baixar minha foto
+            </button>
+            <p class="quality-note">Imagem quadrada em alta qualidade (1080 × 1080 px)</p>
+          </div>
+        </section>
+
+        <footer><strong>1015</strong><span>Feito para quem está fechado com o povo.</span></footer>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
